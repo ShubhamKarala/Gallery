@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
 
                 include_once "dbh.inc.php";
 
-                if (empty($imageTitle) || empty($image)) {
+                if (empty($imageTitle) || empty($imageDesc)) {
                     header("Location: ../gallery.php?upload=empty");
                     exit();
                 } else {
